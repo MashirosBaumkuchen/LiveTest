@@ -11,6 +11,12 @@ android {
         minSdkVersion 15
         targetSdkVersion 21
     }
+
+    packagingOptions {
+        doNotStrip '*/mips/*.so'
+        doNotStrip '*/mips64/*.so'
+    }
+
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'

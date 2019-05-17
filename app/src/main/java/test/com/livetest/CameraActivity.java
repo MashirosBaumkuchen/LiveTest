@@ -60,11 +60,12 @@ public class CameraActivity extends Activity implements SrsEncodeHandler.SrsEnco
         //预览分辨率
         mPublisher.setPreviewResolution(1280, 720);
         //推流分辨率
-        mPublisher.setOutputResolution(720, 1280);
+        mPublisher.setOutputResolution(480, 640);
+
         //传输率
-        mPublisher.setVideoHDMode();
+//        mPublisher.setVideoHDMode();
         //开启美颜（其他滤镜效果在MagicFilterType中查看）
-        mPublisher.switchCameraFilter(MagicFilterType.BEAUTY);
+//        mPublisher.switchCameraFilter(MagicFilterType.BEAUTY);
         //打开摄像头，开始预览（未推流）
         mPublisher.startCamera();
     }
